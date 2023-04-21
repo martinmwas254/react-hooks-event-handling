@@ -1,5 +1,5 @@
 import React from "react";
-
+import App from "./App";
 function ChangeItUp() {
   function handleChange(event) {
     console.log(`${event.target.name}: ${event.target.value}`);
@@ -13,8 +13,7 @@ function ChangeItUp() {
         onChange={handleChange}
         placeholder="Enter search term..."
       />
-
-      <select name="filter" onChange={handleChange}>
+       <select name="filter" onChange={handleChange}>
         <option value="all">Select a filter...</option>
         <option value="completed">Completed</option>
         <option value="incomplete">Incomplete</option>
@@ -22,5 +21,6 @@ function ChangeItUp() {
     </div>
   );
 }
+  
 
 export default ChangeItUp;
